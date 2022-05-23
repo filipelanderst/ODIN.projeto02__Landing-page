@@ -28,14 +28,14 @@ HTML {
 }
 
 .header .logo {
-  margin: 2rem 0 2rem 8rem;
+  padding: 2rem 0 2rem 8rem;
   color: var(--logoText);
   font-size: 1.5rem;
   font-weight: bold;
 }
 
 .nav-bar {
-  margin: 2rem 8rem 2rem 0;
+  padding: 2rem 8rem 2rem 0;
 }
 
 .nav-bar ul {
@@ -61,7 +61,7 @@ HTML {
 }
 
 .article_1-1 {
-  margin-left: 8rem;
+  padding-left: 8rem;
   font-size: 1.25rem;
 }
 
@@ -90,7 +90,7 @@ HTML {
 }
 
 .article_1-2 {
-  margin: 2rem 8rem 2rem 2rem;
+  padding: 2rem 8rem 2rem 2rem;
 }
 
 .article_1-2 img {
@@ -100,7 +100,7 @@ HTML {
 }
 
 .section_2 {
-  margin: 3rem 0 6rem 0;
+  padding: 3rem 0 6rem 0;
 }
 
 .section_2 h2 {
@@ -151,8 +151,7 @@ HTML {
 }
 
 .article_3-1 {
-  margin: 2rem 2rem;
-  padding: 4rem;
+  padding: 6rem 8rem;
 }
 
 .section_4 {
@@ -197,15 +196,16 @@ HTML {
   font-weight: bold;
 }
 
+/* Media */
+
 @media (max-width: 1300px) {
   .section_1 {
     flex-direction: column;
   }
 
   .article_1-1 p,
-  .article_1-1 h2,
-  .article_1-1 button {
-    margin-right: 8rem;
+  .article_1-1 h2 {
+    padding-right: 8rem;
   }
 
   .article_1-1 p {
@@ -214,21 +214,34 @@ HTML {
   }
 
   .article_1-2 {
-    margin: 2rem 0;
+    margin-top: 2rem;
+    padding: 0rem;
   }
 
   .article_1-2 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    display: block;
   }
 
   .section_2 {
-    overflow-x: auto;
+    margin-top: -2rem;
+  }
+
+  .article_2-1 {
+    flex-wrap: wrap;
+    padding: 0 2rem;
+  }
+
+  .article_3-1 {
+    padding: 4rem 6rem;
   }
 
   .section_4 {
     display: grid;
+    margin: 2rem 4rem;
+    padding: 2rem 2rem;
   }
 
   .article_4-1 p {
@@ -240,29 +253,51 @@ HTML {
   .header {
     display: grid;
     justify-content: center;
+    padding-top: 1rem;
   }
 
   .header .logo {
-    margin: 0;
+    padding: 0;
     margin-bottom: 1rem;
     text-align: center;
     font-size: 1.5rem;
   }
 
   .nav-bar {
-    margin: 0;
+    margin: -2rem 0rem;
+    padding: 2rem 3rem;
   }
 
   .section_1 {
-    margin: 0 -6rem 0 -6rem;
+    padding: 2rem 0;
   }
 
-  .section_3 {
-    margin: 0 -4rem 0 -4rem;
+  .article_1-1 {
+    padding-left: 2rem;
+    margin: 0;
+  }
+
+  .article_1-1 p,
+  .article_1-1 h2 {
+    padding-right: 2rem;
+  }
+
+  .article_1-1 button {
+    margin-bottom: 2rem;
+  }
+
+  .article_1-2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .article_3-1 {
+    padding: 3rem;
   }
 
   .section_4 {
-    margin: 0 -3rem 0 -3rem;
+    margin: 0;
+    border-radius: 0;
   }
 }
 
